@@ -4,10 +4,10 @@
 
 - Homens e mulheres em uma nova fase; rodadas mistas.
 - Dez rodadas de quatro participantes: capacidade planejada de 40 pessoas.
-- R$250 por participante no piloto; R$697 é preço-alvo futuro, não preço anterior.
+- R$250 por participante no piloto.
 - 60 minutos de entrevista individual, 240 minutos de Jogo do Herói coletivo misto e 60 minutos de plano coletivo.
 - Apoio de IA por 30 dias, separado das seis horas de encontros. Sem promessa de atendimento humano contínuo.
-- Três vídeos de 30 segundos: mulheres, homens e misto. Roteiros em `videos-30s.md`; os arquivos de vídeo ainda não foram gerados.
+- Três vídeos de 30 segundos: mulheres, homens e misto. Roteiros em `videos-30s.md`. O filme misto ilustrativo de 30s está incorporado à LP. As versões masculina e feminina ficam reservadas ao lançamento e à divulgação em grupos, Instagram, TikTok e outros canais.
 
 ## Estado desta versão
 
@@ -30,9 +30,9 @@ Pré-lançamento. Sem publicação no Lovable. Sem pagamento, formulário de lea
 
 ## Atualização futura no Lovable
 
-O repositório encontrado estava vazio; portanto não foi presumida sincronização. `main` contém a referência importada. `backup/lp-atual-2026-10-29` preserva a referência e `lancamento/piloto-misto` contém a proposta de mudança. A revisão pode ser feita pelo pull request antes de qualquer integração.
+O repositório encontrado estava vazio; portanto não foi presumida sincronização. `backup/lp-atual-2026-10-29` preserva a referência importada. A nova LP foi desenvolvida em `lancamento/piloto-misto`, com revisão no pull request #1, para integrar à `main` antes da atualização no Lovable.
 
-A cópia preserva os arquivos de texto do projeto original e os arquivos de imagem necessários para a rota publicada. Imagens locais antigas e recursos históricos do diretório Remotion que não são usados pela rota atual não foram todos exportados. O vídeo remoto herdado continua referenciado na versão original e exige disponibilidade do seu serviço de hospedagem. A nova LP não usa esse vídeo antigo.
+A cópia preserva os arquivos de texto do projeto original e os arquivos de imagem necessários para a rota publicada. Imagens locais antigas e recursos históricos do diretório Remotion que não são usados pela rota atual não foram todos exportados. O vídeo remoto herdado continua referenciado na versão original e exige disponibilidade do seu serviço de hospedagem. A nova LP usa somente o filme misto de 30 segundos em `public/media`; não usa o vídeo antigo.
 
 Ao integrar no Lovable, confirmar o projeto `406d1bb9-be16-4c88-8bff-8fa60af86abe` e a origem do repositório antes de conectar. Não substituir a página publicada automaticamente. As imagens usadas pela página estão incluídas; os caminhos `/__l5e/assets-v1/` têm cópias em `public` para a portabilidade da página.
 

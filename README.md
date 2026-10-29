@@ -4,7 +4,7 @@ Cópia da landing page existente, adaptada para homens e mulheres em uma nova fa
 
 ## Oferta
 
-10 rodadas de 4 participantes, R$250 por pessoa: entrevista individual (60 min), Jogo do Herói coletivo misto (240 min), plano coletivo (60 min) e apoio de IA por 30 dias. Preço-alvo futuro: R$697.
+10 rodadas de 4 participantes, R$250 por pessoa: entrevista individual (60 min), Jogo do Herói coletivo misto (240 min), plano coletivo (60 min) e apoio de IA por 30 dias.
 
 ## Executar
 

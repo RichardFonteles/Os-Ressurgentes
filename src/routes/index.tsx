@@ -145,7 +145,7 @@ function SectionTitle({ children, className = "" }: { children: ReactNode; class
   );
 }
 
-function ManifestoVideo() {
+function ReflectionNote() {
   return (
     <aside className="ds-card p-8 md:p-12" aria-label="O que levar da Travessia">
       <p className="label-eyebrow">da reflexão ao movimento</p>
@@ -376,16 +376,17 @@ function Landing() {
                 className="text-display text-[clamp(2.4rem,6.4vw,5.6rem)] reveal"
                 style={{ color: "var(--ivory)" }}
               >
-                Sua próxima fase
+                Você já entendeu muita coisa.
                 <br />
-                começa com um passo.
+                Agora, dê o próximo passo.
               </h1>
               <p
                 className="mt-8 max-w-xl text-lg md:text-xl font-light leading-relaxed reveal"
                 style={{ color: "rgba(240,234,223,0.78)" }}
               >
-                Uma travessia de desenvolvimento pessoal para homens e mulheres: escuta individual,
-                Jogo do Herói em grupo misto e um plano coletivo para transformar reflexão em ação.
+                Para homens e mulheres que estão adiando uma mudança importante. Uma entrevista só
+                sua, o Jogo do Herói em um grupo misto de quatro pessoas e um plano coletivo para
+                começar a agir.
               </p>
               <p className="serif mt-10 text-xl italic reveal" style={{ color: "var(--gold)" }}>
                 Descer ao fundo. Ressurgir transformado.
@@ -394,8 +395,8 @@ function Landing() {
                 <a href={CTA_URL} className="ds-btn ds-btn-primary">
                   Conhecer o piloto
                 </a>
-                <a href="#travessia" className="ds-btn ds-btn-ghost">
-                  Conhecer a Travessia
+                <a href="#video-travessia" className="ds-btn ds-btn-ghost">
+                  Assistir à Travessia
                 </a>
               </div>
               <p
@@ -412,6 +413,61 @@ function Landing() {
             aria-hidden
           >
             role para descer
+          </div>
+        </section>
+
+        <section
+          id="video-travessia"
+          className="scroll-mt-24 py-20 md:py-28"
+          style={{ backgroundColor: "var(--ink)" }}
+          aria-labelledby="video-title"
+        >
+          <div className="container-editorial">
+            <div className="grid gap-10 lg:grid-cols-[1fr_1.5fr] lg:items-center">
+              <div>
+                <Eyebrow>a travessia em 30 segundos</Eyebrow>
+                <h2 id="video-title" className="text-display text-4xl md:text-5xl">
+                  Sua história é individual.
+                  <br />O próximo passo pode ser construído junto.
+                </h2>
+                <p className="mt-6 text-lg leading-relaxed" style={{ color: "var(--sand)" }}>
+                  Um espaço para escutar seu momento, ampliar perspectivas com outras pessoas e
+                  organizar ações para a sua nova fase.
+                </p>
+                <a href="#travessia" className="ds-btn ds-btn-ghost mt-8">
+                  Entender as três etapas
+                </a>
+              </div>
+              <figure>
+                <video
+                  controls
+                  playsInline
+                  preload="none"
+                  poster="/media/os-ressurgentes-misto-poster.jpg"
+                  className="block aspect-video w-full border object-cover"
+                  aria-label="Os Ressurgentes: apresentação para homens e mulheres, 30 segundos"
+                  aria-describedby="video-caption"
+                >
+                  <source src="/media/os-ressurgentes-misto-30s.mp4" type="video/mp4" />
+                  <track
+                    kind="subtitles"
+                    src="/media/os-ressurgentes-misto.vtt"
+                    srcLang="pt-BR"
+                    label="Português"
+                  />
+                  Seu navegador não reproduz este vídeo.{" "}
+                  <a href="/media/os-ressurgentes-misto-30s.mp4">Abra o vídeo da Travessia</a>.
+                </video>
+                <figcaption
+                  id="video-caption"
+                  className="mt-3 text-xs leading-relaxed"
+                  style={{ color: "var(--sand)" }}
+                >
+                  Filme ilustrativo com imagem gerada por IA e animação. Sem locução; acompanhe
+                  pelos textos na tela.
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </section>
 
@@ -544,6 +600,68 @@ function Landing() {
           </div>
         </section>
 
+        <section
+          id="inscricao"
+          className="scroll-mt-24 py-20 md:py-28"
+          style={{ backgroundColor: "var(--forest)" }}
+        >
+          <div className="container-editorial grid gap-12 lg:grid-cols-2">
+            <div>
+              <Eyebrow>a edição piloto</Eyebrow>
+              <SectionTitle>
+                Quatro pessoas.
+                <br />
+                Novas perspectivas.
+              </SectionTitle>
+              <p className="mt-6 text-lg leading-relaxed" style={{ color: "var(--sand)" }}>
+                Dez rodadas de quatro participantes. Homens e mulheres, cada pessoa com sua
+                história, compartilhando uma experiência de desenvolvimento pessoal.
+              </p>
+              <p className="mt-6 text-base leading-relaxed" style={{ color: "var(--sand)" }}>
+                Depois dos encontros, são 30 dias de apoio de IA para continuar refletindo e
+                organizar seus próximos passos. Você escolhe o que compartilhar e mantém a
+                responsabilidade pelas próprias decisões.
+              </p>
+            </div>
+            <div className="ds-card p-8 md:p-10">
+              <p className="label-eyebrow">investimento por participante</p>
+              <p className="serif text-6xl md:text-7xl">R${launchConfig.price}</p>
+              <ul className="space-y-3 text-base leading-relaxed" style={{ color: "var(--sand)" }}>
+                <li>60 min de entrevista individual</li>
+                <li>240 min de Jogo do Herói em grupo misto</li>
+                <li>60 min de plano coletivo de ação</li>
+                <li>30 dias de apoio de IA</li>
+              </ul>
+              {CHECKOUT_URL ? (
+                <a href={CHECKOUT_URL} className="ds-btn ds-btn-primary">
+                  Participar do piloto · R${launchConfig.price}
+                </a>
+              ) : (
+                <>
+                  <p role="status" className="border-t pt-5 text-base leading-relaxed">
+                    Inscrições em breve. A agenda e as condições de participação serão apresentadas
+                    antes da compra.
+                  </p>
+                  <button type="button" disabled className="ds-btn ds-btn-primary">
+                    Inscrições ainda não abertas
+                  </button>
+                </>
+              )}
+              <a
+                href={CONTACT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ds-btn ds-btn-ghost"
+              >
+                Tirar dúvidas pelo WhatsApp
+              </a>
+              <p className="text-xs leading-relaxed" style={{ color: "var(--sand)" }}>
+                O contato abre o WhatsApp. Conversar não reserva vaga e não exige pagamento.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* ============ MINHA TRAVESSIA ============ */}
         <section className="py-32 md:py-40" style={{ backgroundColor: "var(--ink)" }}>
           <div className="container-editorial grid gap-16 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-24">
@@ -606,72 +724,6 @@ function Landing() {
           </div>
         </section>
 
-        <section
-          id="inscricao"
-          className="scroll-mt-24 py-20 md:py-28"
-          style={{ backgroundColor: "var(--forest)" }}
-        >
-          <div className="container-editorial grid gap-12 lg:grid-cols-2">
-            <div>
-              <Eyebrow>a edição piloto</Eyebrow>
-              <SectionTitle>
-                Quatro pessoas.
-                <br />
-                Novas perspectivas.
-              </SectionTitle>
-              <p className="mt-6 text-lg leading-relaxed" style={{ color: "var(--sand)" }}>
-                Dez rodadas de quatro participantes. Homens e mulheres, cada pessoa com sua
-                história, compartilhando uma experiência de desenvolvimento pessoal.
-              </p>
-              <p className="mt-6 text-base leading-relaxed" style={{ color: "var(--sand)" }}>
-                Depois dos encontros, são 30 dias de apoio de IA para continuar refletindo e
-                organizar seus próximos passos. Você escolhe o que compartilhar e mantém a
-                responsabilidade pelas próprias decisões.
-              </p>
-            </div>
-            <div className="ds-card p-8 md:p-10">
-              <p className="label-eyebrow">investimento por participante</p>
-              <p className="serif text-6xl md:text-7xl">R${launchConfig.price}</p>
-              <ul className="space-y-3 text-base leading-relaxed" style={{ color: "var(--sand)" }}>
-                <li>60 min de entrevista individual</li>
-                <li>240 min de Jogo do Herói em grupo misto</li>
-                <li>60 min de plano coletivo de ação</li>
-                <li>30 dias de apoio de IA</li>
-              </ul>
-              <p className="text-sm leading-relaxed" style={{ color: "var(--sand)" }}>
-                Preço-alvo após o piloto: R${launchConfig.targetPrice}. Uma previsão para a próxima
-                etapa.
-              </p>
-              {CHECKOUT_URL ? (
-                <a href={CHECKOUT_URL} className="ds-btn ds-btn-primary">
-                  Participar do piloto · R${launchConfig.price}
-                </a>
-              ) : (
-                <>
-                  <p role="status" className="border-t pt-5 text-base leading-relaxed">
-                    Inscrições em breve. A agenda e as condições de participação serão apresentadas
-                    antes da compra.
-                  </p>
-                  <button type="button" disabled className="ds-btn ds-btn-primary">
-                    Inscrições ainda não abertas
-                  </button>
-                </>
-              )}
-              <a
-                href={CONTACT_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="ds-btn ds-btn-ghost"
-              >
-                Tirar dúvidas pelo WhatsApp
-              </a>
-              <p className="text-xs leading-relaxed" style={{ color: "var(--sand)" }}>
-                O contato abre o WhatsApp. Conversar não reserva vaga e não exige pagamento.
-              </p>
-            </div>
-          </div>
-        </section>
-
         {/* ============ PERGUNTAS FREQUENTES ============ */}
         <section
           id="duvidas"
@@ -703,7 +755,7 @@ function Landing() {
                 ],
                 [
                   "Quanto custa?",
-                  "O piloto custa R$250 por participante, em dez rodadas de quatro pessoas. O preço-alvo após o piloto é R$697; trata-se de uma previsão, não de um preço anterior usado para anunciar desconto.",
+                  "O piloto custa R$250 por participante e inclui a entrevista individual, o jogo coletivo misto, o plano coletivo e 30 dias de apoio de IA. Serão dez rodadas de quatro pessoas.",
                 ],
                 [
                   "Quando e onde acontecem os encontros?",
@@ -753,7 +805,7 @@ function Landing() {
               </button>
             </div>
             <div className="reveal-scale">
-              <ManifestoVideo />
+              <ReflectionNote />
             </div>
           </div>
         </section>

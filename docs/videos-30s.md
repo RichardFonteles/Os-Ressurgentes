@@ -1,8 +1,8 @@
 # Três vídeos de IA — 30 segundos cada
 
-Status: roteiros e direção para produção; sem arquivos finais gerados nesta etapa.
+Status: filme misto ilustrativo de 30s incorporado à LP. Versões feminina e masculina reservadas à produção e divulgação externa. O filme da LP usa imagem gerada por IA, animação e textos; não tem locução ou música. Os roteiros abaixo permanecem como direção para as versões narradas.
 
-Formato: vertical 9:16, 1080×1920, 30 segundos, legendas em português, voz brasileira natural, música licenciada discreta. Manter verde-musgo, marfim e luz dourada. Tom humano e sóbrio. Retratar dor cotidiana e passagem para uma ação concreta, sem sugerir cura, resultados garantidos ou depoimentos reais. Personagens sintéticos são ilustração. Não clonar imagem ou voz de pessoa real sem autorização.
+Formato para divulgação: vertical 9:16, 1080×1920, 30 segundos. Filme misto da LP: horizontal 16:9, 1280×720, 30 segundos, legendas em português, voz brasileira natural, música licenciada discreta. Manter verde-musgo, marfim e luz dourada. Tom humano e sóbrio. Retratar dor cotidiana e passagem para uma ação concreta, sem sugerir cura, resultados garantidos ou depoimentos reais. Personagens sintéticos são ilustração. Não clonar imagem ou voz de pessoa real sem autorização.
 
 ## 1. Mulheres
 

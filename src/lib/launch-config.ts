@@ -1,7 +1,6 @@
 // Só habilite vendas depois de validar checkout, agenda e condições de participação.
 export const launchConfig = {
   price: 250,
-  targetPrice: 697,
   rounds: 10,
   participantsPerRound: 4,
   checkoutUrl: "",
