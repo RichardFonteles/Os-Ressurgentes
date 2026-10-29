@@ -34,7 +34,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: { error: unknown; reset: () => void }) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
@@ -77,11 +77,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "OS RESSURGENTES | Uma Travessia para Homens que Decidiram Sair do Limbo" },
+      { title: "OS RESSURGENTES | Uma nova fase para homens e mulheres" },
       {
         name: "description",
         content:
-          "Uma comunidade para homens que desejam reconhecer suas Correntes Invisíveis, atravessar suas Sombras e reconstruir a própria identidade.",
+          "Desenvolvimento pessoal para homens e mulheres: entrevista individual, Jogo do Herói em grupo misto, plano coletivo e 30 dias de apoio de IA. Piloto: R$250 por pessoa.",
       },
       { name: "author", content: "o.gentólogo" },
       { property: "og:title", content: "OS RESSURGENTES" },
@@ -115,7 +115,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>
