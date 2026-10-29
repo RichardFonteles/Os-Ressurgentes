@@ -39,20 +39,20 @@
 }
 
 :root {
-  --background: #0D0F0E;
-  --foreground: #F0EADF;
-  --moss: #2F4F3A;
-  --moss-deep: #223B2B;
-  --forest: #18271F;
-  --ink: #0D0F0E;
+  --background: #0d0f0e;
+  --foreground: #f0eadf;
+  --moss: #2f4f3a;
+  --moss-deep: #223b2b;
+  --forest: #18271f;
+  --ink: #0d0f0e;
   --graphite: #202421;
-  --ivory: #F0EADF;
-  --sand: #C9B99A;
-  --gold: #A68A55;
+  --ivory: #f0eadf;
+  --sand: #c9b99a;
+  --gold: #a68a55;
 
   --muted: #202421;
-  --muted-foreground: #9AA39B;
-  --border: rgba(240, 234, 223, 0.10);
+  --muted-foreground: #9aa39b;
+  --border: rgba(240, 234, 223, 0.1);
 
   --radius: 0.25rem;
 
@@ -99,7 +99,11 @@
     text-rendering: optimizeLegibility;
   }
 
-  h1, h2, h3, h4, .serif {
+  h1,
+  h2,
+  h3,
+  h4,
+  .serif {
     font-family: var(--font-serif);
     font-weight: 400;
     letter-spacing: -0.01em;
@@ -263,12 +267,16 @@
   animation: scroll-cue-drift 2.6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 @keyframes scroll-cue-drift {
-  0%, 100% { transform: translate(-50%, 0); opacity: 0.55; }
-  50%      { transform: translate(-50%, 10px); opacity: 1; }
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translate(-50%, 10px);
+    opacity: 1;
+  }
 }
-
-
-
 
 /* ============================================================
    DESIGN SYSTEM — Components
@@ -360,7 +368,9 @@
   }
   &:hover {
     color: var(--gold);
-    &::after { right: 0; }
+    &::after {
+      right: 0;
+    }
   }
 }
 
@@ -384,30 +394,41 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 2rem;
     height: 1px;
     background: var(--gold);
     opacity: 0.6;
-    transition: width var(--dur-slow) var(--ease-out-editorial), opacity var(--dur-base) ease;
+    transition:
+      width var(--dur-slow) var(--ease-out-editorial),
+      opacity var(--dur-base) ease;
   }
   &:hover {
     transform: translateY(-2px);
     border-color: rgba(166, 138, 85, 0.35);
     box-shadow: var(--elev-2);
-    &::before { width: 4rem; opacity: 1; }
+    &::before {
+      width: 4rem;
+      opacity: 1;
+    }
   }
 }
 
 @utility ds-card-interactive {
   cursor: pointer;
-  &:active { transform: translateY(0); box-shadow: var(--elev-1); }
+  &:active {
+    transform: translateY(0);
+    box-shadow: var(--elev-1);
+  }
 }
 
 /* --- Navbar --- */
 @utility ds-navbar {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
   display: flex;
   align-items: center;
@@ -444,15 +465,19 @@
   &::after {
     content: "";
     position: absolute;
-    left: 0; right: 100%;
+    left: 0;
+    right: 100%;
     bottom: -2px;
     height: 1px;
     background: var(--gold);
     transition: right var(--dur-base) var(--ease-out-editorial);
   }
-  &:hover, &[data-active="true"] {
+  &:hover,
+  &[data-active="true"] {
     color: var(--gold);
-    &::after { right: 0; }
+    &::after {
+      right: 0;
+    }
   }
 }
 
@@ -494,14 +519,14 @@
     background var(--dur-fast) ease,
     color var(--dur-fast) ease,
     padding-left var(--dur-base) var(--ease-out-editorial);
-  &:hover, &:focus-visible {
-    background: rgba(166, 138, 85, 0.10);
+  &:hover,
+  &:focus-visible {
+    background: rgba(166, 138, 85, 0.1);
     color: var(--gold);
     padding-left: calc(var(--space-4) + 4px);
     outline: none;
   }
 }
-
 
 @media (prefers-reduced-motion: reduce) {
   .reveal,
@@ -513,5 +538,34 @@
   }
   .parallax-y {
     transform: none !important;
+  }
+}
+
+/* Conteúdo permanece legível antes da hidratação e sem JavaScript. */
+.reveal,
+.reveal-left,
+.reveal-scale {
+  opacity: 1;
+  transform: none;
+}
+.manifesto-dialog {
+  margin: auto;
+  width: min(42rem, calc(100% - 2rem));
+  max-height: 85dvh;
+  overflow: auto;
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  color: var(--ivory);
+  background: var(--forest);
+  border: 1px solid var(--gold);
+}
+.manifesto-dialog::backdrop {
+  background: rgba(13, 15, 14, 0.9);
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .scroll-cue {
+    animation: none;
   }
 }
