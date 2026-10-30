@@ -1,12 +1,10 @@
 // Só habilite vendas depois de validar checkout, agenda e condições de participação.
 export const launchConfig = {
-  price: 250,
-  rounds: 10,
   participantsPerRound: 4,
   checkoutUrl: "",
   salesApproved: false,
   contactUrl:
-    "https://wa.me/5585996983300?text=Quero%20conhecer%20o%20piloto%20Os%20Ressurgentes%20para%20homens%20e%20mulheres",
+    "https://wa.me/5585996983300?text=Quero%20solicitar%20uma%20entrevista%20para%20Os%20Ressurgentes%20e%20conhecer%20a%20agenda%20e%20as%20condicoes",
   instagram: [
     { label: "@heroi.me", url: "https://www.instagram.com/heroi.me/" },
     { label: "@richardfonteles1", url: "https://www.instagram.com/richardfonteles1/" },

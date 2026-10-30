@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Desenvolvimento pessoal para homens e mulheres: entrevista individual, Jogo do Herói em grupo misto, plano coletivo e 30 dias de apoio de IA. Piloto: R$250 por pessoa.",
+          "Desenvolvimento pessoal para homens e mulheres: entrevista individual, Jogo do Herói em grupo misto, plano coletivo e 30 dias de apoio de IA. Solicite uma entrevista.",
       },
       { name: "author", content: "o.gentólogo" },
       { property: "og:title", content: "OS RESSURGENTES" },

@@ -4,7 +4,7 @@ import heroForest from "@/assets/hero-forest.jpg";
 import mentorPortrait from "@/assets/mentor-portrait-original.jpg.asset.json";
 import horizon from "@/assets/horizon.jpg";
 import logoOriginal from "@/assets/logo-transparent.png.asset.json";
-import { launchConfig, approvedCheckoutUrl } from "@/lib/launch-config";
+import { launchConfig } from "@/lib/launch-config";
 
 export const Route = createFileRoute("/")({
   component: Landing,
@@ -17,9 +17,8 @@ export const Route = createFileRoute("/")({
 });
 
 // A página permanece em pré-lançamento até a validação operacional.
-const CTA_URL = "#inscricao";
 const CONTACT_URL = launchConfig.contactUrl;
-const CHECKOUT_URL = approvedCheckoutUrl();
+const CTA_URL = CONTACT_URL;
 
 /* ------------ hooks ------------ */
 function useReveal() {
@@ -229,10 +228,12 @@ function Nav() {
         <div className="flex items-center gap-3">
           <a
             href={CTA_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="ds-btn ds-btn-primary hidden md:inline-flex"
             style={{ padding: "0.65rem 1.15rem", fontSize: "0.7rem" }}
           >
-            Conhecer o piloto
+            Solicitar entrevista
           </a>
           <button
             type="button"
@@ -286,8 +287,14 @@ function Nav() {
               {label}
             </a>
           ))}
-          <a href={CTA_URL} onClick={() => setOpen(false)} className="ds-btn ds-btn-primary mt-6">
-            Conhecer o piloto
+          <a
+            href={CTA_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="ds-btn ds-btn-primary mt-6"
+          >
+            Solicitar entrevista
           </a>
         </nav>
       </div>
@@ -392,8 +399,13 @@ function Landing() {
                 Descer ao fundo. Ressurgir transformado.
               </p>
               <div className="mt-12 flex flex-wrap gap-4 reveal">
-                <a href={CTA_URL} className="ds-btn ds-btn-primary">
-                  Conhecer o piloto
+                <a
+                  href={CTA_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="ds-btn ds-btn-primary"
+                >
+                  Solicitar entrevista
                 </a>
                 <a href="#video-travessia" className="ds-btn ds-btn-ghost">
                   Assistir à Travessia
@@ -403,7 +415,7 @@ function Landing() {
                 className="mt-6 text-xs uppercase tracking-[0.32em] reveal"
                 style={{ color: "var(--sand)" }}
               >
-                Piloto · 10 rodadas de 4 participantes · R$250 por pessoa
+                Entrevista individual · Grupo misto de 4 pessoas · Plano coletivo
               </p>
             </div>
           </div>
@@ -463,8 +475,8 @@ function Landing() {
                   className="mt-3 text-xs leading-relaxed"
                   style={{ color: "var(--sand)" }}
                 >
-                  Filme ilustrativo com imagem gerada por IA e animação. Sem locução; acompanhe
-                  pelos textos na tela.
+                  Filme ilustrativo com imagens geradas por IA, animação e locução sintética em
+                  português.
                 </figcaption>
               </figure>
             </div>
@@ -593,8 +605,13 @@ function Landing() {
                 A entrevista é individual. O jogo e o plano de ação são coletivos. O apoio de IA por
                 30 dias complementa a experiência; não representa 30 dias de atendimento humano.
               </p>
-              <a href={CTA_URL} className="ds-btn ds-btn-primary">
-                Conhecer o piloto
+              <a
+                href={CTA_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ds-btn ds-btn-primary"
+              >
+                Solicitar entrevista
               </a>
             </div>
           </div>
@@ -607,15 +624,16 @@ function Landing() {
         >
           <div className="container-editorial grid gap-12 lg:grid-cols-2">
             <div>
-              <Eyebrow>a edição piloto</Eyebrow>
+              <Eyebrow>o próximo passo</Eyebrow>
               <SectionTitle>
                 Quatro pessoas.
                 <br />
                 Novas perspectivas.
               </SectionTitle>
               <p className="mt-6 text-lg leading-relaxed" style={{ color: "var(--sand)" }}>
-                Dez rodadas de quatro participantes. Homens e mulheres, cada pessoa com sua
-                história, compartilhando uma experiência de desenvolvimento pessoal.
+                Uma entrevista individual para compreender seu momento. Depois, uma experiência em
+                grupo misto de quatro pessoas para ampliar perspectivas e construir um plano
+                coletivo de ação.
               </p>
               <p className="mt-6 text-base leading-relaxed" style={{ color: "var(--sand)" }}>
                 Depois dos encontros, são 30 dias de apoio de IA para continuar refletindo e
@@ -624,39 +642,32 @@ function Landing() {
               </p>
             </div>
             <div className="ds-card p-8 md:p-10">
-              <p className="label-eyebrow">investimento por participante</p>
-              <p className="serif text-6xl md:text-7xl">R${launchConfig.price}</p>
+              <p className="label-eyebrow">uma conversa para começar</p>
+              <h3 className="serif text-4xl">Seu momento merece escuta.</h3>
               <ul className="space-y-3 text-base leading-relaxed" style={{ color: "var(--sand)" }}>
                 <li>60 min de entrevista individual</li>
                 <li>240 min de Jogo do Herói em grupo misto</li>
                 <li>60 min de plano coletivo de ação</li>
                 <li>30 dias de apoio de IA</li>
               </ul>
-              {CHECKOUT_URL ? (
-                <a href={CHECKOUT_URL} className="ds-btn ds-btn-primary">
-                  Participar do piloto · R${launchConfig.price}
-                </a>
-              ) : (
-                <>
-                  <p role="status" className="border-t pt-5 text-base leading-relaxed">
-                    Inscrições em breve. A agenda e as condições de participação serão apresentadas
-                    antes da compra.
-                  </p>
-                  <button type="button" disabled className="ds-btn ds-btn-primary">
-                    Inscrições ainda não abertas
-                  </button>
-                </>
-              )}
+              <p
+                className="border-t pt-5 text-base leading-relaxed"
+                style={{ color: "var(--sand)" }}
+              >
+                Solicite a entrevista e conheça a agenda, o investimento e as condições da Travessia
+                antes de decidir participar.
+              </p>
               <a
                 href={CONTACT_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ds-btn ds-btn-ghost"
+                className="ds-btn ds-btn-primary"
               >
-                Tirar dúvidas pelo WhatsApp
+                Quero solicitar uma entrevista
               </a>
               <p className="text-xs leading-relaxed" style={{ color: "var(--sand)" }}>
-                O contato abre o WhatsApp. Conversar não reserva vaga e não exige pagamento.
+                O botão abre o WhatsApp para solicitar informações e combinar a entrevista. Esse
+                contato não confirma agendamento, reserva ou contratação.
               </p>
             </div>
           </div>
@@ -754,12 +765,12 @@ function Landing() {
                   "A oferta inclui 30 dias de apoio de IA para reflexão e organização dos próximos passos. O canal, o início do período e as condições de acesso serão informados antes da compra. A IA pode errar e não substitui orientação profissional ou atendimento humano.",
                 ],
                 [
-                  "Quanto custa?",
-                  "O piloto custa R$250 por participante e inclui a entrevista individual, o jogo coletivo misto, o plano coletivo e 30 dias de apoio de IA. Serão dez rodadas de quatro pessoas.",
+                  "Como conhecer o investimento e as condições?",
+                  "Solicite informações pelo WhatsApp. Você receberá os detalhes da agenda, do investimento e das condições de participação antes de decidir contratar. O pedido de entrevista não constitui compra.",
                 ],
                 [
                   "Quando e onde acontecem os encontros?",
-                  "As datas, os horários e o formato dos encontros serão informados antes da abertura das compras. Consulte a organização para esclarecer suas dúvidas.",
+                  "Consulte a organização para conhecer as datas, os horários e o formato dos encontros antes de contratar.",
                 ],
                 [
                   "Preciso compartilhar informações pessoais com o grupo?",
@@ -834,8 +845,13 @@ function Landing() {
               Conheça a proposta, esclareça suas dúvidas e avalie se esta Travessia faz sentido para
               sua próxima fase.
             </p>
-            <a href={CTA_URL} className="ds-btn ds-btn-primary mt-8 reveal">
-              Conhecer o piloto
+            <a
+              href={CTA_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ds-btn ds-btn-primary mt-8 reveal"
+            >
+              Solicitar entrevista
             </a>
           </div>
         </section>
@@ -870,8 +886,9 @@ function Landing() {
             <div id="condicoes" className="scroll-mt-28">
               <h2 className="serif text-2xl text-ivory">Antes de participar</h2>
               <p className="mt-4">
-                A edição piloto prevê dez rodadas mistas, com quatro participantes por rodada, a
-                R$250 por pessoa. A entrevista é individual; o jogo e o plano de ação são coletivos.
+                A entrevista é individual. O Jogo do Herói e o plano de ação são coletivos, em um
+                grupo misto de quatro pessoas. O investimento e as condições serão apresentados
+                antes da contratação.
               </p>
               <p className="mt-4">
                 Antes da compra, você terá acesso às datas, ao formato, às regras de cancelamento e
@@ -951,7 +968,7 @@ function Landing() {
                 <ul className="space-y-2 text-sm" style={{ color: "var(--muted-foreground)" }}>
                   <li>
                     <a href={CONTACT_URL} className="hover:text-[color:var(--gold)]">
-                      Conhecer o piloto
+                      Solicitar entrevista
                     </a>
                   </li>
                   {launchConfig.instagram.map((account) => (

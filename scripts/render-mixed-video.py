@@ -6,6 +6,8 @@ from pathlib import Path
 import os
 import subprocess
 
+raise SystemExit('Renderizador histórico desativado: o vídeo atual foi produzido com MoviePy e Piper. Consulte docs/integracao-video-narrado.md para evitar regenerar a peça antiga com preço.')
+
 ROOT = Path(__file__).resolve().parents[1]
 os.chdir(ROOT)
 TMP = ROOT / '.video-render'
