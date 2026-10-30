@@ -11,7 +11,7 @@
 
 ## Antes de publicar e divulgar
 
-1. Confirmar se a entrevista é a sessão individual de 60 minutos do programa ou uma conversa de apresentação anterior. Não anunciar a segunda opção como gratuita sem decisão expressa.
+1. A conversa inicial de 20–25 minutos faz parte dos 60 minutos da etapa individual. Para quem seguir no programa, completar o tempo restante de aproximadamente 35–40 minutos e aprofundar o desafio antes do jogo coletivo. Não oferecer mais 60 minutos como se fossem adicionais.
 2. Definir agenda, local/plataforma, investimento, cancelamento e remarcação antes da contratação.
 3. Confirmar tratamento de dados, fornecedor e limites do apoio de IA. Não enviar entrevistas automaticamente ao grupo ou à IA.
 4. Configurar e testar captura de interessados, confirmação de agenda, métricas e checkout quando o fluxo comercial for definido. A página atual apenas abre contato pelo WhatsApp; não simula essas integrações.

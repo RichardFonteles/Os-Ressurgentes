@@ -560,7 +560,7 @@ function Landing() {
                 {
                   title: "Encarar",
                   time: "60 min · entrevista individual",
-                  body: "Uma conversa individual para compreender seu momento e o desafio que você deseja trabalhar. Sua história não precisa ser exposta ao grupo.",
+                  body: "Começamos com uma conversa de 20–25 minutos para conhecer seu momento e avaliar o interesse na proposta. Se você seguir no programa, aprofundamos o desafio até completar os 60 minutos da etapa individual. Sua história não precisa ser exposta ao grupo.",
                   focus: "Foco: clareza sobre o ponto de partida.",
                 },
                 {
@@ -644,8 +644,12 @@ function Landing() {
             <div className="ds-card p-8 md:p-10">
               <p className="label-eyebrow">uma conversa para começar</p>
               <h3 className="serif text-4xl">Seu momento merece escuta.</h3>
+              <p className="text-base leading-relaxed" style={{ color: "var(--sand)" }}>
+                Começamos com uma conversa individual de 20–25 minutos. Se você decidir seguir no
+                programa, essa conversa conta dentro dos 60 minutos da etapa individual.
+              </p>
               <ul className="space-y-3 text-base leading-relaxed" style={{ color: "var(--sand)" }}>
-                <li>60 min de entrevista individual</li>
+                <li>60 min de etapa individual, incluindo a conversa inicial de 20–25 min</li>
                 <li>240 min de Jogo do Herói em grupo misto</li>
                 <li>60 min de plano coletivo de ação</li>
                 <li>30 dias de apoio de IA</li>
@@ -751,6 +755,10 @@ function Landing() {
                 [
                   "Quem pode participar?",
                   "Homens e mulheres que buscam desenvolvimento pessoal para uma nova fase. As rodadas são mistas, com quatro participantes.",
+                ],
+                [
+                  "Como funciona a conversa inicial?",
+                  "A primeira conversa dura entre 20 e 25 minutos, antes da contratação, para conhecer seu momento, avaliar o interesse e apresentar a proposta. Se você seguir no programa, esse tempo já conta dentro dos 60 minutos da etapa individual. Restam cerca de 35–40 minutos para aprofundar seu desafio antes do jogo coletivo. Não são 60 minutos adicionais.",
                 ],
                 [
                   "O que é individual e o que é coletivo?",
