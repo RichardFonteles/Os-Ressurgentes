@@ -33,3 +33,6 @@ dist-ssr
 
 
 .video-render/
+
+# Netlify local state and generated functions
+.netlify/
