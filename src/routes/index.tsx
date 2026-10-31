@@ -150,8 +150,8 @@ function ReflectionNote() {
       <p className="label-eyebrow">da reflexão ao movimento</p>
       <h3 className="serif text-3xl">Um espaço de escuta. Um próximo passo possível.</h3>
       <p className="text-base leading-relaxed" style={{ color: "var(--sand)" }}>
-        Você traz seu momento. O grupo amplia as perspectivas. O plano coletivo organiza o que pode
-        começar a mudar na rotina.
+        Você traz seu momento. A experiência amplia as perspectivas. O plano de ação organiza o que
+        pode começar a mudar na rotina.
       </p>
       <p className="text-sm leading-relaxed" style={{ color: "var(--sand)" }}>
         Sem promessa de transformação garantida. Com espaço para escolher e assumir seus próximos
@@ -392,7 +392,7 @@ function Landing() {
                 style={{ color: "rgba(240,234,223,0.78)" }}
               >
                 Para homens e mulheres que estão adiando uma mudança importante. Uma entrevista só
-                sua, o Jogo do Herói em um grupo misto de quatro pessoas e um plano coletivo para
+                sua, o Jogo do Herói online, com até quatro participantes, e um plano de ação para
                 começar a agir.
               </p>
               <p className="serif mt-10 text-xl italic reveal" style={{ color: "var(--gold)" }}>
@@ -415,7 +415,7 @@ function Landing() {
                 className="mt-6 text-xs uppercase tracking-[0.32em] reveal"
                 style={{ color: "var(--sand)" }}
               >
-                Entrevista individual · Grupo misto de 4 pessoas · Plano coletivo
+                14/11/2026 · 13h às 17h (Brasília) · Online via Zoom
               </p>
             </div>
           </div>
@@ -476,7 +476,8 @@ function Landing() {
                   style={{ color: "var(--sand)" }}
                 >
                   Filme ilustrativo com imagens geradas por IA, animação e locução sintética em
-                  português.
+                  português. O vídeo apresenta o formato com quatro pessoas; neste encontro, a
+                  experiência acontece com um a quatro participantes.
                 </figcaption>
               </figure>
             </div>
@@ -535,15 +536,16 @@ function Landing() {
               <Eyebrow>como funciona</Eyebrow>
               <SectionTitle>Três etapas. Um próximo passo concreto.</SectionTitle>
               <p className="mt-6 text-lg leading-relaxed" style={{ color: "var(--sand)" }}>
-                Você começa com uma entrevista individual. Depois, participa do Jogo do Herói em um
-                grupo misto de quatro pessoas e constrói, com o grupo, um plano coletivo de ação.
-                São seis horas de encontros por participante e apoio de IA por 30 dias.
+                Você começa com uma entrevista individual. Depois, participa do Jogo do Herói
+                online, com um a quatro participantes, e constrói um plano de ação. Com duas ou mais
+                pessoas, o jogo e o plano são coletivos e mistos; com uma pessoa, a experiência é
+                individual. São seis horas de encontros por participante e apoio de IA por 30 dias.
               </p>
             </div>
             <div className="mt-8 flex flex-wrap gap-3 text-base reveal">
               {[
                 "Entrevista individual",
-                "Grupo misto de 4 pessoas",
+                "De 1 a 4 participantes",
                 "6 horas de encontros + 30 dias de IA",
               ].map((label) => (
                 <span
@@ -565,14 +567,14 @@ function Landing() {
                 },
                 {
                   title: "Romper",
-                  time: "240 min · Jogo do Herói coletivo misto",
-                  body: "Quatro participantes, homens e mulheres, em uma experiência guiada de perguntas, reflexão e novas possibilidades de ação. Compartilhe apenas o que desejar.",
+                  time: "240 min · Jogo do Herói online",
+                  body: "Dia 14/11/2026, das 13h às 17h (horário de Brasília), via Zoom. Uma experiência guiada para homens e mulheres, com um a quatro participantes. Acontece mesmo com apenas uma pessoa.",
                   focus: "Foco: reconhecer padrões e considerar outras escolhas.",
                 },
                 {
                   title: "Reescrever",
-                  time: "60 min · plano coletivo",
-                  body: "Construir com o grupo um plano coletivo, com próximos passos e compromissos de ação. Cada pessoa escolhe como aplicar as reflexões à própria rotina.",
+                  time: "60 min · plano de ação",
+                  body: "O plano de ação será agendado no dia do Jogo do Herói. Será coletivo quando houver duas ou mais pessoas e individual se houver apenas uma. Cada pessoa escolhe como aplicar as reflexões à própria rotina.",
                   focus: "Foco: transformar reflexão em ações na sua rotina.",
                 },
               ].map(({ title, time, body, focus }, i) => (
@@ -602,8 +604,9 @@ function Landing() {
             </ol>
             <div className="mt-10 flex flex-col items-start gap-5 reveal">
               <p className="max-w-2xl text-base leading-relaxed" style={{ color: "var(--sand)" }}>
-                A entrevista é individual. O jogo e o plano de ação são coletivos. O apoio de IA por
-                30 dias complementa a experiência; não representa 30 dias de atendimento humano.
+                A entrevista é individual. Com duas ou mais pessoas, o jogo e o plano são coletivos;
+                com uma pessoa, são individuais. O apoio de IA por 30 dias complementa a
+                experiência; não representa 30 dias de atendimento humano.
               </p>
               <a
                 href={CTA_URL}
@@ -626,14 +629,14 @@ function Landing() {
             <div>
               <Eyebrow>o próximo passo</Eyebrow>
               <SectionTitle>
-                Quatro pessoas.
+                Seu próximo passo.
                 <br />
                 Novas perspectivas.
               </SectionTitle>
               <p className="mt-6 text-lg leading-relaxed" style={{ color: "var(--sand)" }}>
-                Uma entrevista individual para compreender seu momento. Depois, uma experiência em
-                grupo misto de quatro pessoas para ampliar perspectivas e construir um plano
-                coletivo de ação.
+                Uma entrevista individual para compreender seu momento. Depois, o Jogo do Herói
+                online para ampliar perspectivas e construir um plano de ação. De uma a quatro
+                pessoas, com realização confirmada mesmo com apenas um participante.
               </p>
               <p className="mt-6 text-base leading-relaxed" style={{ color: "var(--sand)" }}>
                 Depois dos encontros, são 30 dias de apoio de IA para continuar refletindo e
@@ -650,8 +653,8 @@ function Landing() {
               </p>
               <ul className="space-y-3 text-base leading-relaxed" style={{ color: "var(--sand)" }}>
                 <li>60 min de etapa individual</li>
-                <li>240 min de Jogo do Herói em grupo misto</li>
-                <li>60 min de plano coletivo de ação</li>
+                <li>14/11/2026 · Jogo do Herói das 13h às 17h (Brasília), via Zoom</li>
+                <li>60 min de plano de ação · agendamento no dia do jogo</li>
                 <li>30 dias de apoio de IA</li>
               </ul>
               <p
@@ -674,6 +677,34 @@ function Landing() {
                 contato não confirma agendamento, reserva ou contratação.
               </p>
             </div>
+          </div>
+        </section>
+
+        <section
+          id="garantia"
+          className="scroll-mt-24 py-16"
+          style={{ backgroundColor: "var(--forest)" }}
+        >
+          <div className="container-editorial max-w-3xl">
+            <Eyebrow>garantia do ponto cego</Eyebrow>
+            <SectionTitle>
+              Se você não descobrir seu ponto cego, devolvemos seu investimento.
+            </SectionTitle>
+            <p className="mt-6 text-lg leading-relaxed" style={{ color: "var(--sand)" }}>
+              Se, ao final do Jogo do Herói, você considerar que não descobriu seu ponto cego,
+              devolveremos integralmente o valor pago pelo programa. Basta enviar um e-mail
+              informando que deseja o reembolso. Sem precisar explicar o motivo.
+            </p>
+            <a
+              className="mt-6 inline-block underline"
+              href="mailto:rafonteles@gmail.com?subject=Pedido%20de%20reembolso%20-%20Os%20Ressurgentes"
+            >
+              rafonteles@gmail.com
+            </a>
+            <p className="mt-4 text-sm" style={{ color: "var(--sand)" }}>
+              Essa garantia é adicional e não limita os direitos previstos no Código de Defesa do
+              Consumidor.
+            </p>
           </div>
         </section>
 
@@ -754,7 +785,7 @@ function Landing() {
               {[
                 [
                   "Quem pode participar?",
-                  "Homens e mulheres que buscam desenvolvimento pessoal para uma nova fase. As rodadas são mistas, com quatro participantes.",
+                  "Homens e mulheres que buscam desenvolvimento pessoal para uma nova fase. A experiência tem de um a quatro participantes. Com duas ou mais pessoas, o grupo é misto; com uma, a experiência é individual e acontece normalmente.",
                 ],
                 [
                   "Como funciona a conversa inicial?",
@@ -762,7 +793,7 @@ function Landing() {
                 ],
                 [
                   "O que é individual e o que é coletivo?",
-                  "A entrevista de 60 minutos é individual. O Jogo do Herói de 240 minutos e o plano de ação de 60 minutos são coletivos, com o mesmo grupo de quatro pessoas.",
+                  "A etapa individual tem 60 minutos. O Jogo do Herói tem quatro horas e o plano de ação tem uma hora. Com duas ou mais pessoas, jogo e plano são coletivos; com apenas uma, são individuais.",
                 ],
                 [
                   "Preciso conhecer o Jogo do Herói?",
@@ -778,7 +809,7 @@ function Landing() {
                 ],
                 [
                   "Quando e onde acontecem os encontros?",
-                  "Consulte a organização para conhecer as datas, os horários e o formato dos encontros antes de contratar.",
+                  "O Jogo do Herói acontece em 14/11/2026, das 13h às 17h, no horário de Brasília, online via Zoom. A entrevista é agendada individualmente. A data do plano de ação será combinada no dia do jogo. O acesso ao Zoom será enviado aos participantes confirmados.",
                 ],
                 [
                   "Preciso compartilhar informações pessoais com o grupo?",
@@ -894,9 +925,10 @@ function Landing() {
             <div id="condicoes" className="scroll-mt-28">
               <h2 className="serif text-2xl text-ivory">Antes de participar</h2>
               <p className="mt-4">
-                A entrevista é individual. O Jogo do Herói e o plano de ação são coletivos, em um
-                grupo misto de quatro pessoas. O investimento e as condições serão apresentados
-                antes da contratação.
+                A entrevista é individual. O Jogo do Herói acontece online via Zoom em 14/11/2026,
+                das 13h às 17h (Brasília), com um a quatro participantes. Jogo e plano são coletivos
+                com duas ou mais pessoas e individuais com uma pessoa. O investimento e as condições
+                serão apresentados antes da contratação.
               </p>
               <p className="mt-4">
                 Antes da compra, você terá acesso às datas, ao formato, às regras de cancelamento e

@@ -1,6 +1,13 @@
 // Só habilite vendas depois de validar checkout, agenda e condições de participação.
 export const launchConfig = {
   participantsPerRound: 4,
+  minimumParticipants: 1,
+  eventDate: "2026-11-14",
+  eventStart: "13:00",
+  eventEnd: "17:00",
+  eventTimeZone: "America/Sao_Paulo",
+  eventPlatform: "Zoom",
+  refundEmail: "rafonteles@gmail.com",
   checkoutUrl: "",
   salesApproved: false,
   contactUrl:
