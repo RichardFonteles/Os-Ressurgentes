@@ -397,7 +397,7 @@ function Landing() {
                 className="mt-6 text-xs uppercase tracking-[0.32em] reveal"
                 style={{ color: "var(--sand)" }}
               >
-                14/11/2026 · 13h às 17h (Brasília) · Online via Zoom
+                28/11/2026 · 13h às 17h (Brasília) · Online via Zoom
               </p>
             </div>
           </div>
@@ -550,7 +550,7 @@ function Landing() {
                 {
                   title: "Romper",
                   time: "240 min · Jogo do Herói online",
-                  body: "Dia 14/11/2026, das 13h às 17h (horário de Brasília), via Zoom. Uma experiência guiada para homens e mulheres, com um a quatro participantes. Acontece mesmo com apenas uma pessoa.",
+                  body: "Dia 28/11/2026, das 13h às 17h (horário de Brasília), via Zoom. Uma experiência guiada para homens e mulheres, com um a quatro participantes. Acontece mesmo com apenas uma pessoa.",
                   focus: "Foco: reconhecer padrões e considerar outras escolhas.",
                 },
                 {
@@ -635,7 +635,7 @@ function Landing() {
               </p>
               <ul className="space-y-3 text-base leading-relaxed" style={{ color: "var(--sand)" }}>
                 <li>60 min de etapa individual</li>
-                <li>14/11/2026 · Jogo do Herói das 13h às 17h (Brasília), via Zoom</li>
+                <li>28/11/2026 · Jogo do Herói das 13h às 17h (Brasília), via Zoom</li>
                 <li>60 min de plano de ação · agendamento no dia do jogo</li>
                 <li>30 dias de apoio de IA</li>
               </ul>
@@ -785,7 +785,7 @@ function Landing() {
                 ],
                 [
                   "Quando e onde acontecem os encontros?",
-                  "O Jogo do Herói acontece em 14/11/2026, das 13h às 17h, no horário de Brasília, online via Zoom. A entrevista é agendada individualmente. A data do plano de ação será combinada no dia do jogo. O acesso ao Zoom será enviado aos participantes confirmados.",
+                  "O Jogo do Herói acontece em 28/11/2026, das 13h às 17h, no horário de Brasília, online via Zoom. A entrevista é agendada individualmente. A data do plano de ação será combinada no dia do jogo. O acesso ao Zoom será enviado aos participantes confirmados.",
                 ],
                 [
                   "Preciso compartilhar informações pessoais com o grupo?",
@@ -901,7 +901,7 @@ function Landing() {
             <div id="condicoes" className="scroll-mt-28">
               <h2 className="serif text-2xl text-ivory">Antes de participar</h2>
               <p className="mt-4">
-                A entrevista é individual. O Jogo do Herói acontece online via Zoom em 14/11/2026,
+                A entrevista é individual. O Jogo do Herói acontece online via Zoom em 28/11/2026,
                 das 13h às 17h (Brasília), com um a quatro participantes. Jogo e plano são coletivos
                 com duas ou mais pessoas e individuais com uma pessoa. O investimento e as condições
                 serão apresentados antes da contratação.

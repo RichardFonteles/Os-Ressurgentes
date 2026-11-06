@@ -2,7 +2,7 @@
 export const launchConfig = {
   participantsPerRound: 4,
   minimumParticipants: 1,
-  eventDate: "2026-11-14",
+  eventDate: "2026-11-28",
   eventStart: "13:00",
   eventEnd: "17:00",
   eventTimeZone: "America/Sao_Paulo",
