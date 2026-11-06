@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import heroForest from "@/assets/hero-forest.jpg";
-import mentorPortrait from "@/assets/mentor-portrait-original.jpg.asset.json";
+import mentorPortrait from "@/assets/mentor-portrait.png";
 import horizon from "@/assets/horizon.jpg";
 import logoOriginal from "@/assets/logo-transparent.png.asset.json";
 import { launchConfig } from "@/lib/launch-config";
@@ -377,7 +377,7 @@ function Landing() {
           <div className="container-editorial relative z-10 pt-32 pb-24">
             <div className="max-w-3xl">
               <p className="label-eyebrow mb-8 reveal">
-                OS RESSURGENTES · homens e mulheres em uma nova fase
+                OS RESSURGENTES · uma nova fase começa em você
               </p>
               <h1
                 className="text-display text-[clamp(2.4rem,6.4vw,5.6rem)] reveal"
@@ -695,12 +695,6 @@ function Landing() {
               devolveremos integralmente o valor pago pelo programa. Basta enviar um e-mail
               informando que deseja o reembolso. Sem precisar explicar o motivo.
             </p>
-            <a
-              className="mt-6 inline-block underline"
-              href="mailto:rafonteles@gmail.com?subject=Pedido%20de%20reembolso%20-%20Os%20Ressurgentes"
-            >
-              rafonteles@gmail.com
-            </a>
             <p className="mt-4 text-sm" style={{ color: "var(--sand)" }}>
               Essa garantia é adicional e não limita os direitos previstos no Código de Defesa do
               Consumidor.
@@ -714,12 +708,12 @@ function Landing() {
             <div className="reveal">
               <div className="sticky top-32">
                 <img
-                  src={mentorPortrait.url}
+                  src={mentorPortrait}
                   alt="Fotografia de o.gentólogo"
                   className="w-full object-cover"
                   loading="lazy"
-                  width={1024}
-                  height={1024}
+                  width={1448}
+                  height={1086}
                 />
                 <p className="serif mt-6 text-lg italic" style={{ color: "var(--sand)" }}>
                   o.gentólogo
