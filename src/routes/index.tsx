@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import heroForest from "@/assets/hero-forest.jpg";
-import mentorPortrait from "@/assets/mentor-portrait-original.jpg.asset.json";
+import mentorPortrait from "@/assets/mentor-portrait.png";
 import horizon from "@/assets/horizon.jpg";
 import logoOriginal from "@/assets/logo-transparent.png.asset.json";
 import { launchConfig } from "@/lib/launch-config";
@@ -226,15 +226,6 @@ function Nav() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a
-            href={CTA_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ds-btn ds-btn-primary hidden md:inline-flex"
-            style={{ padding: "0.65rem 1.15rem", fontSize: "0.7rem" }}
-          >
-            Solicitar entrevista
-          </a>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -287,15 +278,6 @@ function Nav() {
               {label}
             </a>
           ))}
-          <a
-            href={CTA_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
-            className="ds-btn ds-btn-primary mt-6"
-          >
-            Solicitar entrevista
-          </a>
         </nav>
       </div>
     </header>
@@ -377,7 +359,7 @@ function Landing() {
           <div className="container-editorial relative z-10 pt-32 pb-24">
             <div className="max-w-3xl">
               <p className="label-eyebrow mb-8 reveal">
-                OS RESSURGENTES · homens e mulheres em uma nova fase
+                OS RESSURGENTES · uma nova fase começa em você
               </p>
               <h1
                 className="text-display text-[clamp(2.4rem,6.4vw,5.6rem)] reveal"
@@ -415,7 +397,7 @@ function Landing() {
                 className="mt-6 text-xs uppercase tracking-[0.32em] reveal"
                 style={{ color: "var(--sand)" }}
               >
-                14/11/2026 · 13h às 17h (Brasília) · Online via Zoom
+                28/11/2026 · 13h às 17h (Brasília) · Online via Zoom
               </p>
             </div>
           </div>
@@ -568,7 +550,7 @@ function Landing() {
                 {
                   title: "Romper",
                   time: "240 min · Jogo do Herói online",
-                  body: "Dia 14/11/2026, das 13h às 17h (horário de Brasília), via Zoom. Uma experiência guiada para homens e mulheres, com um a quatro participantes. Acontece mesmo com apenas uma pessoa.",
+                  body: "Dia 28/11/2026, das 13h às 17h (horário de Brasília), via Zoom. Uma experiência guiada para homens e mulheres, com um a quatro participantes. Acontece mesmo com apenas uma pessoa.",
                   focus: "Foco: reconhecer padrões e considerar outras escolhas.",
                 },
                 {
@@ -653,7 +635,7 @@ function Landing() {
               </p>
               <ul className="space-y-3 text-base leading-relaxed" style={{ color: "var(--sand)" }}>
                 <li>60 min de etapa individual</li>
-                <li>14/11/2026 · Jogo do Herói das 13h às 17h (Brasília), via Zoom</li>
+                <li>28/11/2026 · Jogo do Herói das 13h às 17h (Brasília), via Zoom</li>
                 <li>60 min de plano de ação · agendamento no dia do jogo</li>
                 <li>30 dias de apoio de IA</li>
               </ul>
@@ -695,12 +677,6 @@ function Landing() {
               devolveremos integralmente o valor pago pelo programa. Basta enviar um e-mail
               informando que deseja o reembolso. Sem precisar explicar o motivo.
             </p>
-            <a
-              className="mt-6 inline-block underline"
-              href="mailto:rafonteles@gmail.com?subject=Pedido%20de%20reembolso%20-%20Os%20Ressurgentes"
-            >
-              rafonteles@gmail.com
-            </a>
             <p className="mt-4 text-sm" style={{ color: "var(--sand)" }}>
               Essa garantia é adicional e não limita os direitos previstos no Código de Defesa do
               Consumidor.
@@ -714,12 +690,12 @@ function Landing() {
             <div className="reveal">
               <div className="sticky top-32">
                 <img
-                  src={mentorPortrait.url}
+                  src={mentorPortrait}
                   alt="Fotografia de o.gentólogo"
                   className="w-full object-cover"
                   loading="lazy"
-                  width={1024}
-                  height={1024}
+                  width={1448}
+                  height={1086}
                 />
                 <p className="serif mt-6 text-lg italic" style={{ color: "var(--sand)" }}>
                   o.gentólogo
@@ -809,7 +785,7 @@ function Landing() {
                 ],
                 [
                   "Quando e onde acontecem os encontros?",
-                  "O Jogo do Herói acontece em 14/11/2026, das 13h às 17h, no horário de Brasília, online via Zoom. A entrevista é agendada individualmente. A data do plano de ação será combinada no dia do jogo. O acesso ao Zoom será enviado aos participantes confirmados.",
+                  "O Jogo do Herói acontece em 28/11/2026, das 13h às 17h, no horário de Brasília, online via Zoom. A entrevista é agendada individualmente. A data do plano de ação será combinada no dia do jogo. O acesso ao Zoom será enviado aos participantes confirmados.",
                 ],
                 [
                   "Preciso compartilhar informações pessoais com o grupo?",
@@ -925,7 +901,7 @@ function Landing() {
             <div id="condicoes" className="scroll-mt-28">
               <h2 className="serif text-2xl text-ivory">Antes de participar</h2>
               <p className="mt-4">
-                A entrevista é individual. O Jogo do Herói acontece online via Zoom em 14/11/2026,
+                A entrevista é individual. O Jogo do Herói acontece online via Zoom em 28/11/2026,
                 das 13h às 17h (Brasília), com um a quatro participantes. Jogo e plano são coletivos
                 com duas ou mais pessoas e individuais com uma pessoa. O investimento e as condições
                 serão apresentados antes da contratação.
