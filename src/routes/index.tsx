@@ -226,15 +226,6 @@ function Nav() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a
-            href={CTA_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ds-btn ds-btn-primary hidden md:inline-flex"
-            style={{ padding: "0.65rem 1.15rem", fontSize: "0.7rem" }}
-          >
-            Solicitar entrevista
-          </a>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
@@ -287,15 +278,6 @@ function Nav() {
               {label}
             </a>
           ))}
-          <a
-            href={CTA_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
-            className="ds-btn ds-btn-primary mt-6"
-          >
-            Solicitar entrevista
-          </a>
         </nav>
       </div>
     </header>
